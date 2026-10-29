@@ -1,13 +1,17 @@
 {
   "expo": {
-    "name": "smart-capture-notes",
+    "name": "Smart Capture & Notes",
     "slug": "smart-capture-notes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Smart Capture uses the camera so you can photograph things and save them with notes.",
+        "NSPhotoLibraryUsageDescription": "Smart Capture needs access to your photos so you can attach existing images to your notes."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -15,8 +19,18 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": ["CAMERA"]
     },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Smart Capture uses the camera so you can photograph things and save them with notes.",
+          "photosPermission": "Smart Capture needs access to your photos so you can attach existing images to your notes."
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     }
