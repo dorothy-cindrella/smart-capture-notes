@@ -95,8 +95,16 @@ Navigation is a small state-based switch in `App.js` (home / detail / form) with
 
 ## Screenshots / Demo
 
-Add your screenshots or screen recording to a `screenshots/` folder and link them here:
+Screen recording: [video/ScreenRecord.mp4](video/ScreenRecord.mp4)
 
-- `screenshots/home.png`
-- `screenshots/add-record.png`
-- `screenshots/detail.png`
+| Home | Add record |
+|---|---|
+| ![Home](<screenshot/Home page.jpeg>) | ![Add](<screenshot/adding new record.jpeg>) |
+
+| Record detail | Edit record |
+|---|---|
+| ![Record](<screenshot/Record.jpeg>) | ![Edit](<screenshot/Editing record.jpeg>) |
+
+| Search | Filter |
+|---|---|
+| ![Search](<screenshot/search page.jpeg>) | ![Filter](<screenshot/filter record.jpeg>) |
